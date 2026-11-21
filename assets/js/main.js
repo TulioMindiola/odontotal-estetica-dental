@@ -201,32 +201,6 @@
     row.addEventListener('pointercancel', end);
   }
 
-  /* ---------- reseñas ---------- */
-  const QUOTES = [
-    { q: 'La doctora Cristina es, en mi experiencia, la mejor profesional de la salud dental que he conocido en todo Bogotá.', n: 'Esteban R.', m: 'reseña en Google' },
-    { q: 'Utilizan material de alta calidad, son personas muy humanas y cuentan con excelentes instalaciones. Su trabajo es impecable.', n: 'Silvia B.', m: 'reseña en Google' },
-    { q: 'La doctora Cristina es súper amable y muy buena en su profesión. También me sentí muy bien atendida por el Dr. Carlos y el Dr. Juan.', n: 'Gloria C.', m: 'reseña en Google' },
-    { q: 'Gracias por el excelente trabajo y el trato humano. Desde hace muchos años han sido mi primera opción con mi familia.', n: 'Marcela C.', m: 'reseña en Google' },
-    { q: 'Muy buena atención. Son un amor, súper delicados y pulidos con los tratamientos.', n: 'Daniela Q.', m: 'reseña en Google' },
-    { q: 'La mejor experiencia, un trabajo muy bien hecho. Quedé totalmente satisfecho.', n: 'Germán O.', m: 'reseña en Google' },
-  ];
-  const qFig = $('[data-quotes]');
-  if (qFig) {
-    let qi = 0;
-    const qt = $('[data-quote-text]', qFig), qn = $('[data-quote-name]', qFig), qm = $('[data-quote-meta]', qFig);
-    const show = (dir) => {
-      qi = (qi + dir + QUOTES.length) % QUOTES.length;
-      const swap = () => { qt.textContent = QUOTES[qi].q; qn.textContent = QUOTES[qi].n; qm.textContent = QUOTES[qi].m; };
-      if (hasGsap && !reduce) {
-        gsap.timeline()
-          .to([qt, $('.quote__by', qFig)], { opacity: 0, y: -10 * dir, duration: .25, ease: 'power2.in', onComplete: swap })
-          .fromTo([qt, $('.quote__by', qFig)], { opacity: 0, y: 14 * dir }, { opacity: 1, y: 0, duration: .55, ease: 'power3.out', stagger: .05 });
-      } else swap();
-    };
-    $('[data-quote-prev]', qFig).addEventListener('click', () => show(-1));
-    $('[data-quote-next]', qFig).addEventListener('click', () => show(1));
-  }
-
   /* ---------- sedes ---------- */
   const SEDES = {
     chia: {

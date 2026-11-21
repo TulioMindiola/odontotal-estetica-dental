@@ -22,7 +22,7 @@
 <link rel="preload" href="assets/fonts/sentient-300.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/sentient-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/img/consultorio-chia.webp" as="image">
-<link rel="stylesheet" href="assets/css/styles.css?v=5">
+<link rel="stylesheet" href="assets/css/styles.css?v=8">
 <script>
   (function (d) {
     d.classList.add('js');
@@ -240,8 +240,9 @@
 
   <!-- SERVICIOS -->
   <section class="services wrap" id="servicios" aria-labelledby="services-title">
-    <div class="services__intro">
-      <h2 id="services-title" class="t-head" data-reveal>Lo que hacemos por tu sonrisa</h2>
+    <div class="services__intro" data-reveal>
+      <h2 id="services-title" class="t-head">Lo que hacemos por tu sonrisa</h2>
+      <p class="services__lede">Estética, rehabilitación y cuidado general en Suba y Chía. Estos son los tratamientos que más nos piden.</p>
     </div>
     <div class="services__body">
       <div class="services__aside" aria-hidden="true">
@@ -383,7 +384,7 @@
     <div class="prices__side" data-reveal>
       <h2 id="prices-title" class="t-head">Precios y cuotas</h2>
       <div class="prices__img img-wrap" data-clip>
-        <img src="assets/img/laboratorio-carillas.webp" width="1400" height="1020" alt="Pieza cerámica en manos del técnico dental" loading="lazy" decoding="async" style="object-position:62% 60%">
+        <img src="assets/img/caso-despues.webp" width="1179" height="670" alt="Sonrisa terminada de un paciente de la sede Chía" loading="lazy" decoding="async" style="object-position:50% 45%">
       </div>
     </div>
     <div class="prices__menu">
@@ -423,17 +424,17 @@
     <div class="quote__body">
       <h2 id="quote-title" class="t-head" data-reveal>Cinco estrellas en Google</h2>
       <p class="quote__score" data-reveal>5,0 de 5 · 11 reseñas entre Suba y Chía</p>
-      <figure class="quote__fig" data-quotes>
-        <blockquote class="quote__text" data-quote-text>La doctora Cristina es, en mi experiencia, la mejor profesional de la salud dental que he conocido en todo Bogotá.</blockquote>
-        <figcaption class="quote__by"><span data-quote-name>Esteban R.</span> · <span data-quote-meta>reseña en Google</span></figcaption>
-        <div class="quote__nav">
-          <button type="button" class="sq sq--line" data-quote-prev aria-label="Reseña anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-          <button type="button" class="sq sq--line" data-quote-next aria-label="Reseña siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
-        </div>
+      <figure class="quote__fig" data-reveal>
+        <blockquote class="quote__text">La doctora Cristina es, en mi experiencia, la mejor profesional de la salud dental que he conocido en todo Bogotá.</blockquote>
+        <figcaption class="quote__by">Esteban R. · reseña en Google</figcaption>
       </figure>
-      <div class="quote__small img-wrap" data-clip>
-        <img src="assets/img/caso-despues-detalle.webp" width="879" height="707" alt="Resultado de un diseño de sonrisa en la sede Chía" loading="lazy" decoding="async">
-      </div>
+      <ul class="quote__more" data-reveal>
+        <li><blockquote>Utilizan material de alta calidad, son personas muy humanas y cuentan con excelentes instalaciones.</blockquote><span>Silvia B.</span></li>
+        <li><blockquote>La doctora Cristina es súper amable y muy buena en su profesión; igualmente me sentí muy bien atendida por el Dr. Carlos y el Dr. Juan.</blockquote><span>Gloria C.</span></li>
+        <li><blockquote>Desde hace muchos años han sido mi primera opción con mi familia.</blockquote><span>Marcela C.</span></li>
+        <li><blockquote>Son un amor, súper delicados y pulidos con los tratamientos.</blockquote><span>Daniela Q.</span></li>
+      </ul>
+      <a class="link quote__all" href="https://www.google.com/maps/search/?api=1&amp;query=Odontotal%20Especialistas%20en%20Estetica%20Dental%20Centro%20Suba" target="_blank" rel="noopener">Ver todas las reseñas en Google</a>
     </div>
   </section>
 
@@ -544,6 +545,6 @@
 <script src="assets/vendor/gsap.min.js" defer></script>
 <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="assets/vendor/lenis.min.js" defer></script>
-<script src="assets/js/main.js?v=6" defer></script>
+<script src="assets/js/main.js?v=7" defer></script>
 </body>
 </html>
